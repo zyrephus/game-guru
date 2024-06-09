@@ -22,7 +22,8 @@ const useGames = (gameQuery: GameQuery) =>
     // Parameter objects being sent to server
     params: {
       genres: gameQuery.genre?.id,
-      platforms: gameQuery.platform?.id
+      platforms: gameQuery.platform?.id,
+      ordering: gameQuery.sortOrder,
     } },
     // Dependencies
     [gameQuery]
