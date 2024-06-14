@@ -29,6 +29,10 @@ Game Guru is a web application designed to simplify the process of discovering n
   <td>A promise-based HTTP client for making HTTP requests from Node.js or the browser.</td>
 </tr>
 <tr>
+  <td>RAWG API</td>
+  <td>An API for retrieving data about video games, used for fetching game information and details.</td>
+</tr>
+<tr>
   <td>Vercel</td>
   <td>A cloud platform for static sites and serverless functions, used for deployment.</td>
 </tr>
