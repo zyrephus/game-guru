@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Game Guru
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Game Guru is a web application designed to simplify the process of discovering new games by providing intuitive filters and a clean user interface. Whether you're looking for the latest indie titles, classic RPGs, or trending multiplayer games, Game Guru helps you explore a vast library with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Demo](https://example.com)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+<table>
+<tr>
+  <td>React</td>
+  <td>A JavaScript library for building user interfaces.</td>
+</tr>
+<tr>
+  <td>Chakra UI</td>
+  <td>A simple, modular, and accessible component library for React applications.</td>
+</tr>
+<tr>
+  <td>Canva</td>
+  <td>Used for logo design and graphic creation.</td>
+</tr>
+<tr>
+  <td>Node.js</td>
+  <td>A JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications.</td>
+</tr>
+<tr>
+  <td>Axios</td>
+  <td>A promise-based HTTP client for making HTTP requests from Node.js or the browser.</td>
+</tr>
+<tr>
+  <td>RAWG API</td>
+  <td>An API for retrieving data about video games, used for fetching game information and details.</td>
+</tr>
+<tr>
+  <td>Vercel</td>
+  <td>A cloud platform for static sites and serverless functions, used for deployment.</td>
+</tr>
+</table>
