@@ -14,7 +14,7 @@ const GameGrid = ({ gameQuery }: Props) => {
   const { data, error, isLoading } = useGames(gameQuery);
   const skeletons = Array.from({ length: 12 }, (_, i) => i + 1);
 
-  if (error) return <Text>{error}</Text>;
+  if (error) return <Text>{error.message}</Text>;
 
   return (
     // Dynamically change columns based on screen size
@@ -31,7 +31,7 @@ const GameGrid = ({ gameQuery }: Props) => {
           </GameCardContainer>
         ))}
       {/* Games */}
-      {data.map((game) => (
+      {data?.results.map((game) => (
         <GameCardContainer key={game.id}>
           <GameCard game={game} />
         </GameCardContainer>
