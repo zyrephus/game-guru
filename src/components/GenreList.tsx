@@ -6,10 +6,10 @@ import GenreListSkeleton from "./GenreListSkeleton";
 // Notify parent component of selected genre (App.tsx)
 interface Props {
   onSelectGenre: (genre: Genre) => void;
-  selectedGenre: Genre | null;
+  selectedGenreId?: number;
 }
 
-const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenreId, onSelectGenre }: Props) => {
   const { data, isLoading, error } = useGenres();
   const skeletons = Array.from({ length: 19 }, (_, i) => i + 1);
 
@@ -34,7 +34,11 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
                 objectFit={'cover'}
                 src={getCroppedImageUrl(genre.image_background)}
               />
-              <Button whiteSpace={'normal'} textAlign='left' fontWeight={genre.id === selectedGenre?.id ? 'bold' : 'normal'} onClick={() => onSelectGenre(genre)} fontSize='lg' variant='link'>{genre.name}</Button>
+              <Button
+                whiteSpace={'normal'} textAlign='left'
+                fontWeight={genre.id === selectedGenreId ? 'bold' : 'normal'}
+                onClick={() => onSelectGenre(genre)} fontSize='lg' variant='link'>{genre.name}
+              </Button>
             </HStack>
           </ListItem>
         ))}
