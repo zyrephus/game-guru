@@ -4,7 +4,7 @@
 
 Game Guru is a web application designed to simplify the process of discovering new games by providing intuitive filters and a clean user interface. Whether you're looking for the latest indie titles, classic RPGs, or trending multiplayer games, Game Guru helps you explore a vast library with ease.
 
-[View Demo](https://example.com)
+[View Demo](https://game-guru-eight.vercel.app/)
 
 ## Technologies Used
 <table>
@@ -27,6 +27,10 @@ Game Guru is a web application designed to simplify the process of discovering n
 <tr>
   <td>Axios</td>
   <td>A promise-based HTTP client for making HTTP requests from Node.js or the browser.</td>
+</tr>
+  <tr>
+  <td>Zustand</td>
+  <td>A small, fast, and scalable state management.v</td>
 </tr>
 <tr>
   <td>RAWG API</td>
