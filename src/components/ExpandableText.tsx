@@ -19,7 +19,7 @@ const ExpandableText = ({ children }: Props) => {
 
   return (
     <>
-      <Collapse startingHeight={45} in={expanded}>
+      <Collapse startingHeight={48} in={expanded}>
         {children}
       </Collapse>
       <Button

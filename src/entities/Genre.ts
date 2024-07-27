@@ -1,4 +1,3 @@
-// Genre object
 
 export interface Genre {
   id: number;
