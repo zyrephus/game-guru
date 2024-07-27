@@ -1,6 +1,6 @@
 # Game Guru
 
-<img src="./assets/front-page.png" alt="Game Guru Front Page" style="max-width:100%; height:auto;">
+<img src="./src/assets/front-page.png" alt="Game Guru Front Page" style="max-width:100%; height:auto;">
 
 ## Overview
 
