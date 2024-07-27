@@ -1,10 +1,12 @@
 # Game Guru
 
+<img src="./assets/front-page.png" alt="Game Guru Front Page" style="max-width:100%; height:auto;">
+
 ## Overview
 
 Game Guru is a web application designed to simplify the process of discovering new games by providing intuitive filters and a clean user interface. Whether you're looking for the latest indie titles, classic RPGs, or trending multiplayer games, Game Guru helps you explore a vast library with ease.
 
-[View Demo](https://game-guru-eight.vercel.app/)
+[Try it out yourself!](https://game-guru-eight.vercel.app/)
 
 ## Technologies Used
 <table>
