@@ -32,7 +32,7 @@ Game Guru is a web application designed to simplify the process of discovering n
 </tr>
   <tr>
   <td>Zustand</td>
-  <td>A small, fast, and scalable state management.v</td>
+  <td>A small, fast, and scalable state management library for React applications, offering a minimal API and excellent performance.</td>
 </tr>
 <tr>
   <td>RAWG API</td>
