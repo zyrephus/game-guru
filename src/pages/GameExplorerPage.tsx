@@ -5,7 +5,7 @@ import GenreList from "../components/GenreList";
 import PlatformSelector from "../components/PlatformSelector";
 import SortSelector from "../components/SortSelector";
 
-const GameExplorerpage = () => {
+const GameExplorerPage = () => {
   return (
     <Grid
       templateAreas={{
@@ -38,4 +38,4 @@ const GameExplorerpage = () => {
   );
 };
 
-export default GameExplorerpage;
+export default GameExplorerPage;
