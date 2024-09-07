@@ -3,7 +3,7 @@ import GameExplorerPage from "./pages/GameExplorerPage";
 import Layout from "./pages/Layout";
 import GameDetailPage from "./pages/GameDetailPage";
 import ErrorPage from "./pages/ErrorPage";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage.tsx";
 
 const router = createBrowserRouter([
   {

@@ -23,10 +23,9 @@ const HomePage = () => {
       <Button
         as={Link}
         to="/explore"
-        colorScheme="yellow"
         size="lg"
-        borderRadius="full"
-        shadow="lg"
+        fontWeight="bold"
+        colorScheme="yellow"
       >
         Explore Now
       </Button>

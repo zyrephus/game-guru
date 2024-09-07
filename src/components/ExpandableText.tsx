@@ -1,5 +1,5 @@
 import { Button, Collapse, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Props {
   children: string;
@@ -7,30 +7,34 @@ interface Props {
 
 const ExpandableText = ({ children }: Props) => {
   const [expanded, setExpanded] = useState(false);
-  const limit = 300;
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const textRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    // Checks if content overflows the starting height (48 pixels)
+    if (textRef.current && textRef.current.scrollHeight > 48) {
+      setIsOverflowing(true);
+    }
+  }, [children]);
 
   if (!children) return null; // Defensive programming
-
-  if (children.length <= limit) {
-    return <Text>{children}</Text>;
-  }
-
-  // const summary = expanded ? children : children.substring(0, limit) + "...";
 
   return (
     <>
       <Collapse startingHeight={48} in={expanded}>
-        {children}
+        <div ref={textRef}>{children}</div>
       </Collapse>
-      <Button
-        mt={2}
-        size="sm"
-        fontWeight="bold"
-        colorScheme="yellow"
-        onClick={() => setExpanded(!expanded)}
-      >
-        Show {expanded ? "Less" : "More"}
-      </Button>
+      {isOverflowing && (
+        <Button
+          mt={2}
+          size="sm"
+          fontWeight="bold"
+          colorScheme="yellow"
+          onClick={() => setExpanded(!expanded)}
+        >
+          Show {expanded ? "Less" : "More"}
+        </Button>
+      )}
     </>
   );
 };
