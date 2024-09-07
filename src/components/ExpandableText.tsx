@@ -1,4 +1,4 @@
-import { Button, Collapse, Text } from "@chakra-ui/react";
+import { Button, Collapse } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 
 interface Props {
