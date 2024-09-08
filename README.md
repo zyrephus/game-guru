@@ -27,6 +27,10 @@ Game Guru is a web application designed to simplify the process of discovering n
   <td>A JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications.</td>
 </tr>
 <tr>
+  <td>React Query</td>
+  <td>A library for fetching, caching, and synchronizing server state in React applications, enhancing data fetching and state management.</td>
+</tr>
+<tr>
   <td>Axios</td>
   <td>A promise-based HTTP client for making HTTP requests from Node.js or the browser.</td>
 </tr>
