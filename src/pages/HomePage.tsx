@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <SimpleGrid columns={2}>
+    <SimpleGrid columns={{ base: 1, md: 2 }}>
       <Box
         height="calc(100vh - 120px)"
         display="flex"
@@ -13,7 +13,13 @@ const HomePage = () => {
         px={6}
         textAlign="center"
       >
-        <Heading as="h1" size="2xl" mb={4} fontWeight="bold" color="#D6BCFA">
+        <Heading 
+          as="h1" size="2xl" 
+          mb={4} fontWeight="bold" 
+          color="#D6BCFA"  
+          _hover={{ color: "#B794F4" }}
+          transition="color 0.3s"
+        >
           Welcome to Game Guru
         </Heading>
 
