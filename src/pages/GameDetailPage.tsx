@@ -10,7 +10,15 @@ const GameDetailPage = () => {
   const { slug } = useParams();
   const { data: game, isLoading, error } = useGame(slug!); // This constant will never be null
 
-  if (isLoading) return <Spinner />;
+  if (isLoading) return (
+    <Spinner
+      thickness='4px'
+      speed='0.65s'
+      emptyColor='gray.100'
+      color='purple.200'
+      size='xl'      
+    />
+    );
 
   if (error || !game) throw error;
 
