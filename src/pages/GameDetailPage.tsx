@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useGame from "../hooks/useGame";
 import { Button, GridItem, Heading, SimpleGrid, Spinner } from "@chakra-ui/react";
 import ExpandableText from "../components/ExpandableText";
@@ -9,6 +9,7 @@ import GameScreenshots from "../components/GameScreenshots";
 const GameDetailPage = () => {
   const { slug } = useParams();
   const { data: game, isLoading, error } = useGame(slug!); // This constant will never be null
+  const navigate = useNavigate(); // Initialize useNavigate
 
   if (isLoading) return (
     <Spinner
@@ -39,8 +40,7 @@ const GameDetailPage = () => {
         position="fixed"
         bottom="1rem"
         left="1rem"
-        as={Link}
-        to="/explore"
+        onClick={() => navigate(-1)}
         size="sm"
         fontWeight="bold"
         colorScheme="purple"
