@@ -1,5 +1,6 @@
 import { Box, Button, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import MacBook from "../assets/MacBook.png"
 
 const HomePage = () => {
   return (
@@ -51,7 +52,7 @@ const HomePage = () => {
       >
         <Image 
           key={1}
-          src={"src/assets/MacBook.png"}
+          src={MacBook}
         />
       </Box>
       
