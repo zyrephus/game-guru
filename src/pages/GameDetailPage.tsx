@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useGame from "../hooks/useGame";
-import { Box, Button, GridItem, Heading, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
+import { Button, GridItem, Heading, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
 import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
 import GameTrailer from "../components/GameTrailer";
