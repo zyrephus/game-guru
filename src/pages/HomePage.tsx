@@ -7,12 +7,15 @@ const HomePage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
+    // Define a function to update the mouse position state
     const updateMousePosition = (ev: MouseEvent) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
     };
 
+    // Add an event listener for the 'mousemove' event when the component mounts
     window.addEventListener('mousemove', updateMousePosition);
 
+    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener('mousemove', updateMousePosition);
     };
