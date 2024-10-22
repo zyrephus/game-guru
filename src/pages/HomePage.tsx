@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Box, Button, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import MacBook from "../assets/MacBook.png";
