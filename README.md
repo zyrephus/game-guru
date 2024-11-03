@@ -6,7 +6,7 @@
 
 Game Guru is a web application designed to simplify the process of discovering new games by providing intuitive filters and a clean user interface. Whether you're looking for the latest indie titles, classic RPGs, or trending multiplayer games, Game Guru helps you explore a vast library with ease.
 
-[Try it out yourself!](https://game-guru-zyrephus-projects.vercel.app/)
+[Try it out yourself!](https://gameguru.vercel.app/)
 
 ## Technologies Used
 <table>
