@@ -8,7 +8,16 @@ import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes.tsx';
 
-const queryClient = new QueryClient();
+// Add this to ensure smooth transitions
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
