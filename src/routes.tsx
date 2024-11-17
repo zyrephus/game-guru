@@ -4,24 +4,17 @@ import GameDetailPage from "./pages/GameDetailPage";
 import GameExplorerPage from "./pages/GameExplorerPage";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
-import AppContainer from "./components/AppContainer";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <AppContainer />,
+    path: "/",
+    element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
-      {
-      path: "/",
-      element: <Layout />,
-      errorElement: <ErrorPage />,
-      children: [
-            { index: true, element: <HomePage /> },
-            { path: "explore", element: <GameExplorerPage /> },
-            { path: "games/:slug", element: <GameDetailPage /> },
-          ],
-      }
-    ]
+      { index: true, element: <HomePage /> },
+      { path: "explore", element: <GameExplorerPage /> },
+      { path: "games/:slug", element: <GameDetailPage /> },
+    ],
   },
 ]);
 
