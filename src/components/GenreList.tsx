@@ -45,6 +45,7 @@ const GenreList = () => {
                 onClick={() => setSelectedGenreId(genre.id)}
                 fontSize="lg"
                 variant="link"
+                _hover={{ color: "gray.500" }}
               >
                 {genre.name}
               </Button>

@@ -18,7 +18,7 @@ const GameCard = ({ game }: Props) => {
       borderRadius={10}
       border="1px solid"
       borderColor="whiteAlpha.300"
-      transition="border-color 0.4s ease"
+      transition="border-color 0.5s ease"
       _hover={{
         borderColor: "whiteAlpha.700"
       }}
